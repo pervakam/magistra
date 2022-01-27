@@ -1,0 +1,213 @@
+.contacts {
+  box-sizing: border-box;
+  padding: 6.125rem 2rem 7.5rem;
+
+  background-image: url("../img/contacts_background@1x.webp");
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/contacts_background@2x.webp");
+  }
+
+  &__wrapper {
+    width: 100%;
+    max-width: 81.25rem;
+    background-color: $white;
+    margin-top: 2.75rem;
+  }
+
+  &__info {
+    padding: 4.5rem 2.75rem 5.375rem 5.625rem;
+  }
+
+  &__info-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 43%;
+
+    li:not(:last-child) {
+      border-bottom: 1px solid $gray-border;
+    }
+  }
+
+  &__info-item {
+    text-align: left;
+    padding: 2rem 0 1.75rem;
+
+    svg {
+      margin-right: 2rem;
+    }
+
+    &--location {
+      svg {
+        min-width: 2.5rem;
+        max-width: 2.5rem;
+        height: 2rem;
+      }
+    }
+
+    &--phone {
+      svg {
+        min-width: 2.5rem;
+        max-width: 2.5rem;
+        height: 2rem;
+      }
+    }
+
+    &--mail {
+      svg {
+        min-width: 2.5rem;
+        max-width: 2.5rem;
+        height: 2.187rem;
+      }
+    }
+
+    &--agent {
+      svg {
+        min-width: 2.5rem;
+        max-width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: $black;
+    }
+
+    &:hover {
+      a {
+        color: $green;
+      }
+    }
+  }
+
+  &__schedule {
+    width: 48%;
+
+    svg {
+      min-width: 2rem;
+      max-width: 2rem;
+      height: 2rem;
+      margin-right: 1.5rem;
+    }
+
+  }
+
+  &__schedule-table {
+    margin: 2.25rem 0 4.375rem;
+  }
+
+  &__schedule-day {
+    width: 50%;
+    padding: 1rem 0 1rem 3.625rem;
+    text-align: left;
+  }
+
+  &__schedule-period {
+    width: 25%;
+    border-left: 1px solid rgba(112, 112, 112, 0.15);
+  }
+
+  &__schedule-row {
+    &:nth-of-type(even) {
+      background-color: $gray;
+    }
+
+    &:last-of-type {
+      color: $red;
+      background-color: rgba(237, 28, 36, 0.2);
+    }
+
+    &--current {
+      color: $white;
+      font-family: $MontserratBold;
+      background-color: $blue !important;
+      z-index: 100;
+    }
+  }
+
+  &__schedule-attention {
+    text-align: left;
+
+    h4 {
+      color: $red;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0.875rem 0 0;
+      padding: 0;
+    }
+  }
+
+  &__address {
+    padding-bottom: 4.5rem;
+    margin: 0;
+  }
+
+  &__map {
+    height: 35.4375rem;
+  }
+
+  iframe {
+    filter: grayscale(100%);
+    width: 100%;
+    height: 100%;
+  }
+
+  &__schedule-attention-wrapper {
+    svg {
+      fill: $red;
+    }
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .contacts {
+    &__info {
+      padding: 3rem 2rem;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .contacts {
+    &__info-list {
+      width: 100%;
+    }
+
+    &__info {
+      padding: 2rem 1rem;
+    }
+
+    &__schedule {
+      width: 100%;
+    }
+
+    &__info-item {
+      svg {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .contacts {
+    padding: 3rem 1rem;
+
+    &__schedule {
+      font-size: 0.75rem;
+    }
+
+    &__schedule-day {
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    &__map {
+      height: 20rem;
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.health {
+  box-sizing: border-box;
+  padding: 6.125rem 2rem 3.75rem;
+
+  &__wrapper {
+    width: 100%;
+    max-width: 81.25rem;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 1.75rem 0 3.5rem;
+  }
+
+  &__item {
+    width: 32.3%;
+  }
+
+  &__item-link {
+    text-decoration: none;
+    color: $black;
+    text-align: left;
+
+    transition: 0.5s all;
+
+    h3 {
+      transition: 0.5s color;
+    }
+
+    img {
+      transition: 0.5s transform;
+    }
+
+    &:hover {
+      h3 {
+        color: $green;
+        transition: 0.5s color;
+      }
+
+      p {
+        color: $black;
+      }
+
+      img {
+        transform: scale(1.1);
+        transition: 0.5s transform;
+      }
+    }
+  }
+
+  &__item-img {
+    width: 100%;
+    height: 100%;
+    max-height: 17.5rem;
+    border-radius: 0 0.75rem 0 0.75rem;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__item-description {
+    box-sizing: border-box;
+    padding-right: 2rem;
+
+    p {
+      margin: 0.5rem 0 0;
+
+      display: -webkit-box;
+      -webkit-line-clamp: 2; // количество строк
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .health {
+    &__item {
+      width: 100%;
+    }
+
+    &__item-img {
+      width: 30%;
+    }
+
+    &__item-description {
+      width: 68%;
+      padding-right: 0;
+      margin-left: 1.5rem;
+    }
+
+    &__item {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .health {
+    padding: 3rem 1rem;
+
+    &__item-img {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    &__item-description {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    &__item {
+      margin-bottom: 2rem;
+    }
+  }
+}

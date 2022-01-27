@@ -1,0 +1,128 @@
+.tooltip {
+  visibility: hidden;
+  opacity: 0.4;
+  transition: 0.1s all;
+  position: absolute;
+  top: 2.25rem;
+  right: -14rem;
+  text-align: left;
+  padding: 2.625rem 3.125rem;
+  background-color: black;
+  border-radius: 0 0.75rem 0 0.75rem;
+  z-index: 100;
+
+  h4 {
+    margin-bottom: 0.875rem;
+  }
+
+  &__icon {
+    fill: $white;
+    min-width: 2rem;
+    max-width: 2rem;
+    height: 2rem !important;
+    margin-right: 1.125rem !important;
+  }
+
+  &__schedule-attention {
+    color: $white;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+
+      li {
+        margin: 0 0 0.5rem;
+      }
+    }
+  }
+
+  &__target {
+    position: relative;
+  }
+
+  &::before {
+    content: " ";
+    width: 0;
+    height: 0;
+
+    border-style: solid;
+    border-width: 0 0.625rem 0.625rem 0.625rem;
+    border-color: transparent transparent $black transparent;
+
+    position: absolute;
+    top: -0.625rem;
+    left: calc(50% - 0.625rem);
+  }
+}
+
+@include media-breakpoint-down(xxl) {
+  .tooltip {
+    right: -10rem;
+    padding: 2.625rem 3.125rem;
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .tooltip {
+    padding: 2rem;
+    width: 50vw;
+
+    h4 {
+      white-space: normal !important;
+    }
+
+    &__schedule-attention {
+      ul {
+        li {
+          white-space: normal !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1120px) {
+  .tooltip {
+    right: -4rem;
+
+    &::before {
+      left: unset;
+      right: 20%;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .tooltip {
+    width: 60vw;
+    right: 0;
+
+    &::before {
+      right: 40%;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .tooltip {
+    right: 10%;
+
+    &::before {
+      right: 50%;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .tooltip {
+    right: 0;
+    width: 90vw;
+
+    &::before {
+      left: unset;
+      right: 20%;
+    }
+  }
+}

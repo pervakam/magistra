@@ -1,0 +1,30 @@
+// colors
+$white:                   #ffffff;
+$black:                   #000000;
+$blue:                    #3bbcc5;
+$gray:                    #f6f6f6;
+$gray-background:         #e6e6e6;
+$gray-border:             #dddddd;
+$gray-note:               #8d8d8d;
+$green:                   #8dc741;
+$green-light:             #a0be39;
+$yellow:                  #efae05;
+$red:                     #ed1c24;
+$pink:                    #da0068;
+$orange:                  #ec6b06;
+$dark-blue:               #004372;
+
+// fonts
+$Montserrat:           "Montserrat", "Arial", sans-serif;
+$MontserratBold:       "MontserratBold", "Arial", sans-serif;
+
+// breakpoints
+$mobile-min-width:        360px;
+$mobile-max-width:        639px;
+$tablet-min-width:        640px;
+$tablet-max-width:        1279px;
+$desktop-min-width:       1280px;
+$desktop-mid-width:       1440px;
+$desktop-max-width:       1920px;
+
+$retina-dppx:             1.5dppx;

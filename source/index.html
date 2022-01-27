@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Online lékárna s výhodnými akcemi 1+1 ZDARMA | Magistra.cz</title>
+    <meta name="description" content="Magistra">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous" type="font/woff">
+    <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" crossorigin="anonymous" type="font/woff">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/style.min.css" type="text/css">
+</head>
+
+<body>
+
+<header class="page-header container-fluid">
+    <div class="page-header__wrapper">
+        <div class="page-header__controls d-flex align-items-xl-center flex-wrap flex-xl-nowrap">
+            <a class="page-header__logo-wrapper order-1 order-xl-1" href="/">
+                <img class="page-header__logo" loading="lazy" src="img/icons/logo.svg" alt="magistra-logo">
+            </a>
+            <div class="page-header__contacts order-4 order-xl-2 mx-auto mx-xxl-0">
+                <h1>Lékárna Metro Háje</h1>
+                <ul class="page-header__contacts-list d-flex justify-content-center align-items-center justify-content-xl-start p-0 m-0 mt-1 flex-wrap">
+                    <li>
+                        <a href="tel:267914059">
+                            <svg>
+                                <use xlink:href="img/sprite_auto.svg#phone-black"></use>
+                            </svg>
+                            <span>267 914 059</span>
+                        </a>
+                    </li>
+                    <li>
+                        <svg>
+                            <use xlink:href="img/sprite_auto.svg#location-black"></use>
+                        </svg>
+                        Jateční 67, Havlíčkův Brod
+                    </li>
+                    <li class="tooltip__target">
+                        <svg>
+                            <use xlink:href="img/sprite_auto.svg#clock"></use>
+                        </svg>
+                        <div class="d-inline">Dnes od 8 do 17 hodin (
+                            <div
+                                    class="page-header__accent d-inline">
+                                <span>pozor, již brzy změna</span>
+                                <div class="tooltip">
+                                    <div class="tooltip__schedule-attention d-flex justify-content-between">
+                                        <svg class="tooltip__icon">
+                                            <use xlink:href="img/sprite_auto.svg#warning"></use>
+                                        </svg>
+                                        <div class="">
+                                            <h4 class="title title--h4">Výjimky v otevírací době</h4>
+                                            <ul>
+                                                <li>24. 12. — Vánoční neděle bude celý den zavřeno</li>
+                                                <li>25. 12. — První svátek vánoční v pondělí bude celý den zavřeno</li>
+                                                <li>31. 12. — Silvestr bude celý den zavřeno</li>
+                                                <li>1. 12. — Nový rok bude celý den zavřeno</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            )
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="page-header__buttons ms-auto d-flex justify-content-end align-items-start order-2 order-xl-3">
+                <a href="#" target="_blank"
+                   class="page-header__button page-header__button--recipe btn me-1 me-md-2 d-flex flex-column flex-md-row justify-content-between justify-content-md-center align-items-center">
+                    <svg>
+                        <use xlink:href="img/sprite_auto.svg#barcode"></use>
+                    </svg>
+                    <span>eRecept</span>
+                </a>
+                <a href="#" target="_blank"
+                   class="page-header__button page-header__button--shop btn d-flex flex-column flex-md-row justify-content-between justify-content-md-center align-items-center">
+                    <svg>
+                        <use xlink:href="img/sprite_auto.svg#cart"></use>
+                    </svg>
+                    <span>Eshop</span>
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="page-header__collapse collapse navbar-collapse mt-3 mx-aut d-xl-none order-3" id="navbarNav">
+                <ul class="navbar-nav page-header__nav">
+                    <li class="nav-item page-header__nav-item page-header__nav-item--logo">
+                        <a class="page-header__nav-link" href="/">
+                            <img class="page-header__nav-item-logo" loading="lazy"
+                                 src="img/icons/logo_sticky-header.svg" alt="magistra-logo">
+                        </a>
+                    </li>
+                    <li class="nav-item page-header__nav-item">
+                        <a class="nav-link page-header__nav-link p-0" href="#offers">Akční nabídka</a>
+                    </li>
+                    <li class="nav-item page-header__nav-item">
+                        <a class="nav-link page-header__nav-link p-0" href="#about">O lékárně</a>
+                    </li>
+                    <li class="nav-item page-header__nav-item">
+                        <a class="nav-link page-header__nav-link p-0" href="#exclusive">Exluzivní značky</a>
+                    </li>
+                    <li class="nav-item page-header__nav-item">
+                        <a class="nav-link page-header__nav-link p-0" href="#health">Tipy pro zdraví</a>
+                    </li>
+                    <li class="nav-item page-header__nav-item">
+                        <a class="nav-link page-header__nav-link p-0" href="#contacts">Kontakt</a>
+                    </li>
+                    <li class="nav-item page-header__nav-item page-header__nav-item--recipe">
+                        <a class="nav-link page-header__nav-link p-0" href="#offers">
+                            <svg>
+                                <use xlink:href="img/sprite_auto.svg#barcode"></use>
+                            </svg>
+                            <span>eRecept</span>
+                        </a>
+                    </li>
+                    <li class="nav-item page-header__nav-item page-header__nav-item--shop">
+                        <a class="nav-link page-header__nav-link p-0" href="#offers">
+                            <svg>
+                                <use xlink:href="img/sprite_auto.svg#cart"></use>
+                            </svg>
+                            <span>Eshop</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="page-header__nav-wrapper navbar navbar-expand-xl navbar-light p-0">
+            <div class="page-header__navbar">
+                <div class="page-header__collapse mx-auto d-none d-xl-block js-nav">
+                    <ul class="navbar-nav page-header__nav">
+                        <li class="nav-item page-header__nav-item page-header__nav-item--logo">
+                            <a class="page-header__nav-link" href="/">
+                                <img class="page-header__nav-item-logo" loading="lazy"
+                                     src="img/icons/logo_sticky-header.svg" alt="magistra-logo">
+                            </a>
+                        </li>
+                        <li class="nav-item page-header__nav-item">
+                            <a class="nav-link page-header__nav-link p-0" href="#offers">Akční nabídka</a>
+                        </li>
+                        <li class="nav-item page-header__nav-item">
+                            <a class="nav-link page-header__nav-link p-0" href="#about">O lékárně</a>
+                        </li>
+                        <li class="nav-item page-header__nav-item">
+                            <a class="nav-link page-header__nav-link p-0" href="#exclusive">Exluzivní značky</a>
+                        </li>
+                        <li class="nav-item page-header__nav-item">
+                            <a class="nav-link page-header__nav-link p-0" href="#health">Tipy pro zdraví</a>
+                        </li>
+                        <li class="nav-item page-header__nav-item">
+                            <a class="nav-link page-header__nav-link p-0" href="#contacts">Kontakt</a>
+                        </li>
+                        <li class="nav-item page-header__nav-item page-header__nav-item--recipe">
+                            <a class="nav-link page-header__nav-link p-0" href="#offers">
+                                <svg>
+                                    <use xlink:href="img/sprite_auto.svg#barcode"></use>
+                                </svg>
+                                <span>eRecept</span>
+                            </a>
+                        </li>
+                        <li class="nav-item page-header__nav-item page-header__nav-item--shop">
+                            <a class="nav-link page-header__nav-link p-0" href="#offers">
+                                <svg>
+                                    <use xlink:href="img/sprite_auto.svg#cart"></use>
+                                </svg>
+                                <span>Eshop</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="offers__attention d-flex d-xl-none justify-content-between align-items-center">
+            <p class="m-0"><strong>Nepřehlédněte!</strong> Nullam feugiat, turpis at pulvinar vulputate, erat libero
+                tristique tellus</p>
+            <button type="button" class="offers__attention-close">
+                <span class="visually-hidden">close</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="page-main">
+    <section class="js-section offers d-flex mx-auto justify-content-center" id="offers">
+        <aside class="offers__banner offers__banner--left p-0">
+            <a class="offers__banner-link" href="#">
+                <picture>
+                    <source type="image/webp"
+                            srcset="img/advertising_banner_left@1x.webp 1x, img/advertising_banner_left@2x.webp 2x">
+                    <img loading="lazy" src="img/advertising_banner_left@1x.jpg"
+                         srcset="img/advertising_banner_left@2x.jpg 2x"
+                         alt="advertising_banner">
+                </picture>
+            </a>
+        </aside>
+        <div class="offers__wrapper p-0">
+            <div class="offers__attention d-none d-xl-flex justify-content-between align-items-center mb-5">
+                <p class="m-0"><strong>Nepřehlédněte!</strong> Nullam feugiat, turpis at pulvinar vulputate, erat libero
+                    tristique tellus</p>
+                <button type="button" class="offers__attention-close">
+                    <span class="visually-hidden">close</span>
+                </button>
+            </div>
+            <div class="offers__slider">
+                <div class="offers__list-next offers__list-next--main">
+                    <svg>
+                        <use xlink:href="img/sprite_auto.svg#arrow-small"></use>
+                    </svg>
+                </div>
+                <div class="offers__swiper-container offers__swiper-container--main">
+                    <ul class="offers__list">
+                        <li class="offers__item d-flex justify-content-center flex-column flex-md-row">
+                            <div class="offers__item-left">
+                                <picture>
+                                    <source type="image/webp" media="(max-width: 360px)"
+                                            srcset="img/advertising_banner_main-left__mobile@1x.webp 1x, img/advertising_banner_main-left__mobile@2x.webp 2x">
+                                    <source type="image/webp" media="(max-width: 767px)"
+                                            srcset="img/advertising_banner_main-left__tablet@1x.webp 1x, img/advertising_banner_main-left__tablet@2x.webp 2x">
+                                    <source type="image/webp"
+                                            srcset="img/advertising_banner_main-left@1x.webp 1x, img/advertising_banner_main-left@2x.webp 2x">
+
+                                    <source media="(max-width: 360px)"
+                                            srcset="img/advertising_banner_main-left__mobile@1x.jpg 1x, img/advertising_banner_main-left__mobile@2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                            srcset="img/advertising_banner_main-left__tablet@1x.jpg 1x, img/advertising_banner_main-left__tablet@2x.jpg 2x">
+                                    <img src="img/advertising_banner_main-left@1x.jpg"
+                                         srcset="img/advertising_banner_main-left@2x.jpg 2x"
+                                         alt="advertising_banner">
+                                </picture>
+                            </div>
+                            <div class="offers__item-center d-flex flex-column justify-content-between">
+                                <div>
+                                    <div class="offers__item-pic d-flex justify-content-center align-items-center">
+                                        <img src="img/advertising_banner_main-icon.webp" alt="">
+                                    </div>
+                                    <p class="my-0 offers__item-description offers__item-description--top">Dárek na
+                                        poslední
+                                        chvíli?</p>
+                                    <h1 class="title title--h1 mb-2">Vánoční poukazy!</h1>
+                                    <p class="offers__item-description">Lorem ipsum dolor sit amet, consec tetuer
+                                        adipiscing
+                                        elit. Maecenas ips um velit, conse
+                                        ctetuer eu lobortis ut, dictum at dui. In sem justo, comm odo ut, suscipit
+                                        pharetra.</p>
+                                </div>
+                                <button type="button"
+                                        class="button d-flex justify-content-start align-items-center mx-auto mt-auto">
+                                    <span>Zjisti více</span>
+                                    <svg>
+                                        <use xlink:href="img/sprite_auto.svg#arrow"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="offers__item-right">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/advertising_banner_main-right@1x.webp 1x, img/advertising_banner_main-right@2x.webp 2x">
+                                    <img src="img/advertising_banner_main-right@1x.jpg"
+                                         srcset="img/advertising_banner_main-right@2x.jpg 2x"
+                                         alt="advertising_banner">
+                                </picture>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="offers__list-prev offers__list-next--main">
+                    <svg>
+                        <use xlink:href="img/sprite_auto.svg#arrow-small"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <aside class="offers__banner offers__banner--right p-0">
+            <a class="offers__banner-link" href="#">
+                <picture>
+                    <source type="image/webp"
+                            srcset="img/advertising_banner_right@1x.webp 1x, img/advertising_banner_right@2x.webp 2x">
+                    <img loading="lazy" src="img/advertising_banner_right@1x.jpg"
+                         srcset="img/advertising_banner_right@2x.jpg 2x"
+                         alt="advertising_banner">
+                </picture>
+            </a>
+        </aside>
+    </section>
+    <section class="js-section eshop">
+        <h2 class="title title--h2">Akční nabídka na&nbsp;eshopu</h2>
+        <div class="eshop__wrapper p-0">
+            <div class="eshop__slider">
+                <div class="eshop__list-next">
+                    <svg>
+                        <use xlink:href="img/sprite_auto.svg#arrow-small"></use>
+                    </svg>
+                </div>
+                <div class="eshop__swiper-container">
+                    <ul class="eshop__sale-list">
+                        <li class="eshop__sale-item">
+                            <a class="eshop__sale-item-link" href="" target="_blank">
+                                <div class="eshop__sale-item-tags">
+                                    <div class="eshop__sale-item-primary-tags">
+                                        <span class="eshop__sale-item-primary eshop__sale-item-primary--promo">Akce</span>
+                                        <span class="eshop__sale-item-primary eshop__sale-item-primary--price">SUPER CENA!</span>
+                                    </div>
+                                </div>
+                                <div class="eshop__sale-item-img-wrapper">
+                                    <picture>
+                                        <source type="image/webp"
+                                                srcset="img/sale-item@1x.webp 1x, img/sale-item@2x.webp 2x">
+                                        <img loading="lazy" src="img/sale-item@1x.jpg"
+                                             srcset="img/sale-item@2x.jpg 2x"
+                                             alt="sale-item">
+                                    </picture>
+                                    <span class="eshop__sale-item-discount">-40% </span>
+                                </div>
+                                <p class="eshop__sale-item-title mb-0">Apo-Ibuprofen 400 mg 100 potahovaných tablet</p>
+                                <p class="eshop__sale-item-decription mb-0">Tablety ulevují od bolesti při kloubních
+                                    onemocnění - př.: revmatoidní artritida, osteoartróza. Tiší bolesti zad, hlavy, zubů
+                                    i
+                                    menstruační bolesti. Snižuje bolest a horečku při onemocnění horních cest
+                                    dýchacích.</p>
+                                <p class="eshop__sale-item-erpid">Lék k vnitřnímu užití. Obsahuje ibuprofen.</p>
+                                <div class="eshop__sale-item-price">
+                                <span class="eshop__sale-item-price-new">
+                                    165 Kč
+                                </span>
+                                    <span class="eshop__sale-item-price-old">
+                                    99 Kč
+                                </span>
+
+                                </div>
+                                <button type="button"
+                                        class="button button--eshop justify-content-start align-items-center mt-auto">
+                                    <span>Přejít do eshopu</span>
+                                    <svg>
+                                        <use xlink:href="img/sprite_auto.svg#arrow-small"></use>
+                                    </svg>
+                                </button>
+                                <p class="eshop__sale-item--stock">Skladem v&nbsp;eshopu</p>
+                            </a>
+                        </li>
+                        <li class="eshop__sale-item">
+                            <a class="eshop__sale-item-link" href="" target="_blank">
+                                <div class="eshop__sale-item-tags">
+                                    <div class="eshop__sale-item-primary-tags">
+                                        <span class="eshop__sale-item-primary eshop__sale-item-primary--promo">Akce</span>
+                                        <span class="eshop__sale-item-primary eshop__sale-item-primary--price">SUPER CENA!</span>
+                                    </div>
+                                </div>
+                                <div class="eshop__sale-item-img-wrapper">
+                                    <picture>
+                                        <source type="image/webp"
+                                                srcset="img/sale-item@1x.webp 1x, img/sale-item@2x.webp 2x">
+                                        <img loading="lazy" src="img/sale-item@1x.jpg"
+                                             srcset="img/sale-item@2x.jpg 2x"
+                                             alt="sale-item">
+                                    </picture>
+                                    <span class="eshop__sale-item-discount">-40% </span>
+                                </div>
+                                <p class="eshop__sale-item-title mb-0">Apo-Ibuprofen 400 mg 100 potahovaných tablet</p>
+                                <p class="eshop__sale-item-decription mb-0">Tablety ulevují od bolesti při kloubních
+                                    onemocnění - př.: revmatoidní artritida, osteoartróza. Tiší bolesti zad, hlavy, zubů
+                                    i
+                                    menstruační bolesti. Snižuje bolest a horečku při onemocnění horních cest
+                                    dýchacích.</p>
+                                <p class="eshop__sale-item-erpid">Lék k vnitřnímu užití. Obsahuje ibuprofen.</p>
+                                <div class="eshop__sale-item-price">
+                                <span class="eshop__sale-item-price-new">
+                                    165 Kč
+                                </span>
+                                    <span class="eshop__sale-item-price-old">
+                                    99 Kč
+                                </span>
+
+                                </div>
+                                <button type="button"
+                                        class="button button--eshop justify-content-start align-items-center mt-auto">
+                                    <span>Přejít do eshopu</span>
+                                    <svg>
+                                        <use xlink:href="img/sprite_auto.svg#arrow-small"></use>
+                                    </svg>
+                                </button>
+                                <p class="eshop__sale-item--stock">Skladem v&nbsp;eshopu</p>
+                            </a>
+                        </li>
+                        <li class="eshop__sale-item">
+                            <a class="eshop__sale-item-link" href="" target="_blank">
+                                <div class="eshop__sale-item-tags">
+                                    <div class="eshop__sale-item-primary-tags">
+                                        <span class="eshop__sale-item-primary eshop__sale-item-primary--promo">Akce</span>
+                                        <span class="eshop__sale-item-primary eshop__sale-item-primary--price">SUPER CENA!</span>
+                                    </div>
+                                </div>
+                                <div class="eshop__sale-item-img-wrapper">
+                                    <picture>
+                                        <source type="image/webp"
+                                                srcset="img/sale-item@1x.webp 1x, img/sale-item@2x.webp 2x">
+                                        <img loading="lazy" src="img/sale-item@1x.jpg"
+                                             srcset="img/sale-item@2x.jpg 2x"
+                                             alt="sale-item">
+                                    </picture>
+                                    <span class="eshop__sale-item-discount">-40% </span>
+                                </div>
+                                <p class="eshop__sale-item-title mb-0">Apo-Ibuprofen 400 mg 100 potahovaných tablet</p>
+                                <p class="eshop__sale-item-decription mb-0">Tablety ulevují od bolesti při kloubních
+                                    onemocnění - př.: revmatoidní artritida, osteoartróza. Tiší bolesti zad, hlavy, zubů
+                                    i
+                                    menstruační bolesti. Snižuje bolest a horečku při onemocnění horních cest
+                                    dýchacích.</p>
+                                <p class="eshop__sale-item-erpid">Lék k vnitřnímu užití. Obsahuje ibuprofen.</p>
+                                <div class="eshop__sale-item-price">
+                                <span class="eshop__sale-item-price-new">
+                                    165 Kč
+                                </span>
+                                    <span class="eshop__sale-item-price-old">
+                                    99 Kč
+                                </span>
+
+                                </div>
+                                <button type="button"
+                                        class="button button--eshop justify-content-start align-items-center mt-auto">
+                                    <span>Přejít do eshopu</span>
+                                    <svg>
+                                        <use xlink:href="img/sprite_auto.svg#arrow-small"></use>
+                                    </svg>
+                                </button>
+                                <p class="eshop__sale-item--stock">Skladem v&nbsp;eshopu</p>
+                            </a>
+                        </li>
+                        <li class="eshop__sale-item">
+                            <a class="eshop__sale-item-link" href="" target="_blank">
+                                <div class="eshop__sale-item-tags">
+                                    <div class="eshop__sale-item-primary-tags">
+                                        <span class="eshop__sale-item-primary eshop__sale-item-primary--promo">Akce</span>
+                                        <span class="eshop__sale-item-primary eshop__sale-item-primary--price">SUPER CENA!</span>
+                                    </div>
+                                </div>
+                                <div class="eshop__sale-item-img-wrapper">
+                                    <picture>
+                                        <source type="image/webp"
+                                                srcset="img/sale-item@1x.webp 1x, img/sale-item@2x.webp 2x">
+                                        <img loading="lazy" src="img/sale-item@1x.jpg"
+                                             srcset="img/sale-item@2x.jpg 2x"
+                                             alt="sale-item">
+                                    </picture>
+                                    <span class="eshop__sale-item-discount">-40% </span>
+                                </div>
+                                <p class="eshop__sale-item-title mb-0">Apo-Ibuprofen 400 mg 100 potahovaných tablet</p>
+                                <p class="eshop__sale-item-decription mb-0">Tablety ulevují od bolesti při kloubních
+                                    onemocnění - př.: revmatoidní artritida, osteoartróza. Tiší bolesti zad, hlavy, zubů
+                                    i
+                                    menstruační bolesti. Snižuje bolest a horečku při onemocnění horních cest
+                                    dýchacích.</p>
+                                <p class="eshop__sale-item-erpid">Lék k vnitřnímu užití. Obsahuje ibuprofen.</p>
+                                <div class="eshop__sale-item-price">
+                                <span class="eshop__sale-item-price-new">
+                                    165 Kč
+                                </span>
+                                    <span class="eshop__sale-item-price-old">
+                                    99 Kč
+                                </span>
+
+                                </div>
+                                <button type="button"
+                                        class="button button--eshop justify-content-start align-items-center mt-auto">
+                                    <span>Přejít do eshopu</span>
+                                    <svg>
+                                        <use xlink:href="img/sprite_auto.svg#arrow-small"></use>
+                                    </svg>
+                                </button>
+                                <p class="eshop__sale-item--stock">Skladem v&nbsp;eshopu</p>
+                            </a>
+                        </li>
+                        <li class="eshop__sale-item">
+                            <a class="eshop__sale-item-link" href="" target="_blank">
+                                <div class="eshop__sale-item-tags">
+                                    <div class="eshop__sale-item-primary-tags">
+                                        <span class="eshop__sale-item-primary eshop__sale-item-primary--promo">Akce</span>
+                                        <span class="eshop__sale-item-primary eshop__sale-item-primary--price">SUPER CENA!</span>
+                                    </div>
+                                </div>
+                                <div class="eshop__sale-item-img-wrapper">
+                                    <picture>
+                                        <source type="image/webp"
+                                                srcset="img/sale-item@1x.webp 1x, img/sale-item@2x.webp 2x">
+                                        <img loading="lazy" src="img/sale-item@1x.jpg"
+                                             srcset="img/sale-item@2x.jpg 2x"
+                                             alt="sale-item">
+                                    </picture>
+                                    <span class="eshop__sale-item-discount">-40% </span>
+                                </div>
+                                <p class="eshop__sale-item-title mb-0">Apo-Ibuprofen 400 mg 100 potahovaných tablet</p>
+                                <p class="eshop__sale-item-decription mb-0">Tablety ulevují od bolesti při kloubních
+                                    onemocnění - př.: revmatoidní artritida, osteoartróza. Tiší bolesti zad, hlavy, zubů
+                                    i
+                                    menstruační bolesti. Snižuje bolest a horečku při onemocnění horních cest
+                                    dýchacích.</p>
+                                <p class="eshop__sale-item-erpid">Lék k vnitřnímu užití. Obsahuje ibuprofen.</p>
+                                <div class="eshop__sale-item-price">
+                                <span class="eshop__sale-item-price-new">
+                                    165 Kč
+                                </span>
+                                    <span class="eshop__sale-item-price-old">
+                                    99 Kč
+                                </span>
+
+                                </div>
+                                <button type="button"
+                                        class="button button--eshop justify-content-start align-items-center mt-auto">
+                                    <span>Přejít do eshopu</span>
+                                    <svg>
+                                        <use xlink:href="img/sprite_auto.svg#arrow-small"></use>
+                                    </svg>
+                                </button>
+                                <p class="eshop__sale-item--stock">Skladem v&nbsp;eshopu</p>
+                            </a>
+                        </li>
+                        <li class="eshop__sale-item">
+                            <a class="eshop__sale-item-link" href="" target="_blank">
+                                <div class="eshop__sale-item-tags">
+                                    <div class="eshop__sale-item-primary-tags">
+                                        <span class="eshop__sale-item-primary eshop__sale-item-primary--promo">Akce</span>
+                                        <span class="eshop__sale-item-primary eshop__sale-item-primary--price">SUPER CENA!</span>
+                                    </div>
+                                </div>
+                                <div class="eshop__sale-item-img-wrapper">
+                                    <picture>
+                                        <source type="image/webp"
+                                                srcset="img/sale-item@1x.webp 1x, img/sale-item@2x.webp 2x">
+                                        <img loading="lazy" src="img/sale-item@1x.jpg"
+                                             srcset="img/sale-item@2x.jpg 2x"
+                                             alt="sale-item">
+                                    </picture>
+                                    <span class="eshop__sale-item-discount">-40% </span>
+                                </div>
+                                <p class="eshop__sale-item-title mb-0">Apo-Ibuprofen 400 mg 100 potahovaných tablet</p>
+                                <p class="eshop__sale-item-decription mb-0">Tablety ulevují od bolesti při kloubních
+                                    onemocnění - př.: revmatoidní artritida, osteoartróza. Tiší bolesti zad, hlavy, zubů
+                                    i
+                                    menstruační bolesti. Snižuje bolest a horečku při onemocnění horních cest
+                                    dýchacích.</p>
+                                <p class="eshop__sale-item-erpid">Lék k vnitřnímu užití. Obsahuje ibuprofen.</p>
+                                <div class="eshop__sale-item-price">
+                                <span class="eshop__sale-item-price-new">
+                                    165 Kč
+                                </span>
+                                    <span class="eshop__sale-item-price-old">
+                                    99 Kč
+                                </span>
+
+                                </div>
+                                <button type="button"
+                                        class="button button--eshop justify-content-start align-items-center mt-auto">
+                                    <span>Přejít do eshopu</span>
+                                    <svg>
+                                        <use xlink:href="img/sprite_auto.svg#arrow-small"></use>
+                                    </svg>
+                                </button>
+                                <p class="eshop__sale-item--stock">Skladem v&nbsp;eshopu</p>
+                            </a>
+                        </li>
+                        <li class="eshop__sale-item">
+                            <a class="eshop__sale-item-link" href="" target="_blank">
+                                <div class="eshop__sale-item-tags">
+                                    <div class="eshop__sale-item-primary-tags">
+                                        <span class="eshop__sale-item-primary eshop__sale-item-primary--promo">Akce</span>
+                                        <span class="eshop__sale-item-primary eshop__sale-item-primary--price">SUPER CENA!</span>
+                                    </div>
+                                </div>
+                                <div class="eshop__sale-item-img-wrapper">
+                                    <picture>
+                                        <source type="image/webp"
+                                                srcset="img/sale-item@1x.webp 1x, img/sale-item@2x.webp 2x">
+                                        <img loading="lazy" src="img/sale-item@1x.jpg"
+                                             srcset="img/sale-item@2x.jpg 2x"
+                                             alt="sale-item">
+                                    </picture>
+                                    <span class="eshop__sale-item-discount">-40% </span>
+                                </div>
+                                <p class="eshop__sale-item-title mb-0">Apo-Ibuprofen 400 mg 100 potahovaných tablet</p>
+                                <p class="eshop__sale-item-decription mb-0">Tablety ulevují od bolesti při kloubních
+                                    onemocnění - př.: revmatoidní artritida, osteoartróza. Tiší bolesti zad, hlavy, zubů
+                                    i
+                                    menstruační bolesti. Snižuje bolest a horečku při onemocnění horních cest
+                                    dýchacích.</p>
+                                <p class="eshop__sale-item-erpid">Lék k vnitřnímu užití. Obsahuje ibuprofen.</p>
+                                <div class="eshop__sale-item-price">
+                                <span class="eshop__sale-item-price-new">
+                                    165 Kč
+                                </span>
+                                    <span class="eshop__sale-item-price-old">
+                                    99 Kč
+                                </span>
+
+                                </div>
+                                <button type="button"
+                                        class="button button--eshop justify-content-start align-items-center mt-auto">
+                                    <span>Přejít do eshopu</span>
+                                    <svg>
+                                        <use xlink:href="img/sprite_auto.svg#arrow-small"></use>
+                                    </svg>
+                                </button>
+                                <p class="eshop__sale-item--stock">Skladem v&nbsp;eshopu</p>
+                            </a>
+                        </li>
+                        <li class="eshop__sale-item">
+                            <a class="eshop__sale-item-link" href="" target="_blank">
+                                <div class="eshop__sale-item-tags">
+                                    <div class="eshop__sale-item-primary-tags">
+                                        <span class="eshop__sale-item-primary eshop__sale-item-primary--promo">Akce</span>
+                                        <span class="eshop__sale-item-primary eshop__sale-item-primary--price">SUPER CENA!</span>
+                                    </div>
+                                </div>
+                                <div class="eshop__sale-item-img-wrapper">
+                                    <picture>
+                                        <source type="image/webp"
+                                                srcset="img/sale-item@1x.webp 1x, img/sale-item@2x.webp 2x">
+                                        <img loading="lazy" src="img/sale-item@1x.jpg"
+                                             srcset="img/sale-item@2x.jpg 2x"
+                                             alt="sale-item">
+                                    </picture>
+                                    <span class="eshop__sale-item-discount">-40% </span>
+                                </div>
+                                <p class="eshop__sale-item-title mb-0">Apo-Ibuprofen 400 mg 100 potahovaných tablet</p>
+                                <p class="eshop__sale-item-decription mb-0">Tablety ulevují od bolesti při kloubních
+                                    onemocnění - př.: revmatoidní artritida, osteoartróza. Tiší bolesti zad, hlavy, zubů
+                                    i
+                                    menstruační bolesti. Snižuje bolest a horečku při onemocnění horních cest
+                                    dýchacích.</p>
+                                <p class="eshop__sale-item-erpid">Lék k vnitřnímu užití. Obsahuje ibuprofen.</p>
+                                <div class="eshop__sale-item-price">
+                                <span class="eshop__sale-item-price-new">
+                                    165 Kč
+                                </span>
+                                    <span class="eshop__sale-item-price-old">
+                                    99 Kč
+                                </span>
+
+                                </div>
+                                <button type="button"
+                                        class="button button--eshop justify-content-start align-items-center mt-auto">
+                                    <span>Přejít do eshopu</span>
+                                    <svg>
+                                        <use xlink:href="img/sprite_auto.svg#arrow-small"></use>
+                                    </svg>
+                                </button>
+                                <p class="eshop__sale-item--stock">Skladem v&nbsp;eshopu</p>
+                            </a>
+                        </li>
+                        <li class="eshop__sale-item">
+                            <a class="eshop__sale-item-link" href="" target="_blank">
+                                <div class="eshop__sale-item-tags">
+                                    <div class="eshop__sale-item-primary-tags">
+                                        <span class="eshop__sale-item-primary eshop__sale-item-primary--promo">Akce</span>
+                                        <span class="eshop__sale-item-primary eshop__sale-item-primary--price">SUPER CENA!</span>
+                                    </div>
+                                </div>
+                                <div class="eshop__sale-item-img-wrapper">
+                                    <picture>
+                                        <source type="image/webp"
+                                                srcset="img/sale-item@1x.webp 1x, img/sale-item@2x.webp 2x">
+                                        <img loading="lazy" src="img/sale-item@1x.jpg"
+                                             srcset="img/sale-item@2x.jpg 2x"
+                                             alt="sale-item">
+                                    </picture>
+                                    <span class="eshop__sale-item-discount">-40% </span>
+                                </div>
+                                <p class="eshop__sale-item-title mb-0">Apo-Ibuprofen 400 mg 100 potahovaných tablet</p>
+                                <p class="eshop__sale-item-decription mb-0">Tablety ulevují od bolesti při kloubních
+                                    onemocnění - př.: revmatoidní artritida, osteoartróza. Tiší bolesti zad, hlavy, zubů
+                                    i
+                                    menstruační bolesti. Snižuje bolest a horečku při onemocnění horních cest
+                                    dýchacích.</p>
+                                <p class="eshop__sale-item-erpid">Lék k vnitřnímu užití. Obsahuje ibuprofen.</p>
+                                <div class="eshop__sale-item-price">
+                                <span class="eshop__sale-item-price-new">
+                                    165 Kč
+                                </span>
+                                    <span class="eshop__sale-item-price-old">
+                                    99 Kč
+                                </span>
+
+                                </div>
+                                <button type="button"
+                                        class="button button--eshop justify-content-start align-items-center mt-auto">
+                                    <span>Přejít do eshopu</span>
+                                    <svg>
+                                        <use xlink:href="img/sprite_auto.svg#arrow-small"></use>
+                                    </svg>
+                                </button>
+                                <p class="eshop__sale-item--stock">Skladem v&nbsp;eshopu</p>
+                            </a>
+                        </li>
+                        <li class="eshop__sale-item">
+                            <a class="eshop__sale-item-link" href="" target="_blank">
+                                <div class="eshop__sale-item-tags">
+                                    <div class="eshop__sale-item-primary-tags">
+                                        <span class="eshop__sale-item-primary eshop__sale-item-primary--promo">Akce</span>
+                                        <span class="eshop__sale-item-primary eshop__sale-item-primary--price">SUPER CENA!</span>
+                                    </div>
+                                </div>
+                                <div class="eshop__sale-item-img-wrapper">
+                                    <picture>
+                                        <source type="image/webp"
+                                                srcset="img/sale-item@1x.webp 1x, img/sale-item@2x.webp 2x">
+                                        <img loading="lazy" src="img/sale-item@1x.jpg"
+                                             srcset="img/sale-item@2x.jpg 2x"
+                                             alt="sale-item">
+                                    </picture>
+                                    <span class="eshop__sale-item-discount">-40% </span>
+                                </div>
+                                <p class="eshop__sale-item-title mb-0">Apo-Ibuprofen 400 mg 100 potahovaných tablet</p>
+                                <p class="eshop__sale-item-decription mb-0">Tablety ulevují od bolesti při kloubních
+                                    onemocnění - př.: revmatoidní artritida, osteoartróza. Tiší bolesti zad, hlavy, zubů
+                                    i
+                                    menstruační bolesti. Snižuje bolest a horečku při onemocnění horních cest
+                                    dýchacích.</p>
+                                <p class="eshop__sale-item-erpid">Lék k vnitřnímu užití. Obsahuje ibuprofen.</p>
+                                <div class="eshop__sale-item-price">
+                                <span class="eshop__sale-item-price-new">
+                                    165 Kč
+                                </span>
+                                    <span class="eshop__sale-item-price-old">
+                                    99 Kč
+                                </span>
+
+                                </div>
+                                <button type="button"
+                                        class="button button--eshop justify-content-start align-items-center mt-auto">
+                                    <span>Přejít do eshopu</span>
+                                    <svg>
+                                        <use xlink:href="img/sprite_auto.svg#arrow-small"></use>
+                                    </svg>
+                                </button>
+                                <p class="eshop__sale-item--stock">Skladem v&nbsp;eshopu</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="eshop__list-prev eshop__list-prev--hide">
+                    <svg>
+                        <use xlink:href="img/sprite_auto.svg#arrow-small"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="eshop__buttons d-flex d-flex flex-column flex-md-row justify-content-between mx-auto">
+                <button type="button"
+                        class="button button--filled-red d-flex justify-content-center align-items-center mt-auto">
+                    <span>Více produktů</span>
+                    <svg>
+                        <use xlink:href="img/sprite_auto.svg#arrow"></use>
+                    </svg>
+                </button>
+                <button type="button"
+                        class="button button--border d-flex justify-content-center align-items-center mt-auto">
+                    <span>Akční leták <span class="button__note">(<span class="d-none d-md-inline">stáhnout </span>PDF)</span></span>
+                    <svg>
+                        <use xlink:href="img/sprite_auto.svg#arrow"></use>
+                    </svg>
+                </button>
+                <button type="button"
+                        class="button button--border d-flex justify-content-center align-items-center mt-auto">
+                    <span>Akční leták <span class="button__note">(on-line)</span></span>
+                    <svg>
+                        <use xlink:href="img/sprite_auto.svg#arrow"></use>
+                    </svg>
+                </button>
+
+            </div>
+        </div>
+    </section>
+    <div class="page-main__wrapper">
+        <section class="js-section about" id="about">
+            <h2 class="title title--h2">O lékárně</h2>
+            <div class="about__wrapper mx-auto p-0">
+                <div class="about__info">
+                    <div class="d-flex flex-column-reverse flex-md-row justify-content-center">
+                        <div class="col-12 col-md-6 about__info-description">
+                            <h4 class="title title--h4 mb-1">Dárek na poslední chvíli?</h4>
+                            <h1 class="title title--h1 mb-2">Vánoční poukazy!</h1>
+                            <p class="m-0">Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Maecenas ips um
+                                velit,
+                                conse ctetuer eu lobortis ut, dictum at dui. In sem justo, comm odo ut, suscipit
+                                pharetra.</p>
+                            <img src="img/about_signature.png" alt="signature">
+                        </div>
+                        <div class="col-12 col-md-6 about__info-img d-flex justify-content-center">
+                            <picture>
+                                <source type="image/webp"
+                                        srcset="img/about_banner@1x.webp 1x, img/about_banner@2x.webp 2x">
+                                <img loading="lazy" src="img/about_banner@1x.jpg"
+                                     srcset="img/about_banner@2x.jpg 2x"
+                                     alt="Dárek na poslední chvíli?">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__links d-flex flex-column flex-lg-row justify-content-between">
+                    <div class="about__link d-flex justify-content-start flex-column-reverse flex-sm-row">
+                        <div class="about__link-description about__link-description--red d-flex flex-column justify-content-between">
+                            <div>
+                                <h4 class="title title--h4">Dolor sit amet Lorem</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod tempor</p>
+                            </div>
+                            <button type="button"
+                                    class="button button--white d-flex justify-content-start align-items-center mt-auto">
+                                <span>Zjisti více</span>
+                                <svg>
+                                    <use xlink:href="img/sprite_auto.svg#arrow"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="about__link-img">
+                            <picture>
+                                <source type="image/webp"
+                                        srcset="img/about_link-banner_red@1x.webp 1x, img/about_link-banner_red@2x.webp 2x">
+                                <img loading="lazy" src="img/about_link-banner_red@1x.jpg"
+                                     srcset="img/about_link-banner_red@2x.jpg 2x"
+                                     alt="Dárek na poslední chvíli?">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="about__link d-flex justify-content-start flex-column-reverse flex-sm-row">
+                        <div class="about__link-description about__link-description--green d-flex flex-column justify-content-between">
+                            <div>
+                                <h4 class="title title--h4">Dolor sit amet Lorem</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod tempor</p>
+                            </div>
+                            <button type="button"
+                                    class="button button--white d-flex justify-content-start align-items-center mt-auto">
+                                <span>Zjisti více</span>
+                                <svg>
+                                    <use xlink:href="img/sprite_auto.svg#arrow"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="about__link-img">
+                            <picture>
+                                <source type="image/webp"
+                                        srcset="img/about_link-banner_green@1x.webp 1x, img/about_link-banner_green@2x.webp 2x">
+                                <img loading="lazy" src="img/about_link-banner_green@1x.jpg"
+                                     srcset="img/about_link-banner_green@2x.jpg 2x"
+                                     alt="Dárek na poslední chvíli?">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__services">
+                    <ul class="about__services-list d-flex flex-column flex-md-row justify-content-between flex-wrap">
+                        <li class="about__services-item d-flex justify-content-start align-items-center">
+                            <img src="img/icons/cosmetics-icon.png" alt="">
+                            <div class="about__services-item-description">
+                                <h5 class="title title--h5">Dermokosmetika</h5>
+                                <p class="m-0">Nabízíme ucelenou řadu dermokosmetiky od prestižních značek.</p>
+                            </div>
+                        </li>
+                        <li class="about__services-item d-flex justify-content-start align-items-center">
+                            <img src="img/icons/mobile-icon.png" alt="">
+                            <div class="about__services-item-description">
+                                <h5 class="title title--h5">Rezervace v mobilní aplikaci</h5>
+                                <p class="m-0">Nabízíme ucelenou řadu dermokosmetiky od prestižních značek.</p>
+                            </div>
+                        </li>
+                        <li class="about__services-item d-flex justify-content-start align-items-center">
+                            <img src="img/icons/parkings-icon.png" alt="">
+                            <div class="about__services-item-description">
+                                <h5 class="title title--h5">Parkování u pobočky</h5>
+                                <p class="m-0">V blízkosti lekárny je možné zaparkovat autem.</p>
+                            </div>
+                        </li>
+                        <li class="about__services-item d-flex justify-content-start align-items-center">
+                            <img src="img/icons/vet-icon.png" alt="">
+                            <div class="about__services-item-description">
+                                <h5 class="title title--h5">Veterinárium</h5>
+                                <p class="m-0">Naše lekárna nabízí produkty vhodné pro vaše mazlíčky.</p>
+                            </div>
+                        </li>
+                        <li class="about__services-item d-flex justify-content-start align-items-center">
+                            <img src="img/icons/eshop-icon.png" alt="">
+                            <div class="about__services-item-description">
+                                <h5 class="title title--h5">E-shop osobní odběr</h5>
+                                <p class="m-0">V naší lekárně si můžete vyzvednout objednávku z eshopu.</p>
+                            </div>
+                        </li>
+                        <li class="about__services-item d-flex justify-content-start align-items-center">
+                            <img src="img/icons/card-icon.png" alt="">
+                            <div class="about__services-item-description">
+                                <h5 class="title title--h5">Platba kartou</h5>
+                                <p class="m-0">Lze platit kartami Visa a Mastercard.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <h5 class="title title--h5">Přijímáme poukazy</h5>
+                    <ul class="about__partners-list d-flex justify-content-between align-items-center">
+                        <li>
+                            <img src="img/icons/edenred_logo.svg" alt="edenred">
+                        </li>
+                        <li>
+                            <img src="img/icons/up_logo.svg" alt="up">
+                        </li>
+                        <li>
+                            <img src="img/sodexo_logo.png" alt="sodexo">
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+        <section class="js-section exclusive" id="exclusive">
+            <h2 class="title title--h2">Exkluzivně v síti Magistra</h2>
+            <div class="exclusive__wrapper mx-auto p-0">
+                <div class="exclusive__offers d-flex flex-column flex-xl-row justify-content-center mt-5">
+                    <div class="exclusive__offer exclusive__offer--main">
+                        <div class="exclusive__offer-img-wrapper">
+                            <picture>
+                                <source type="image/webp"
+                                        srcset="img/exclusive_link-banner_top@1x.webp 1x, img/exclusive_link-banner_top@2x.webp 2x">
+                                <img loading="lazy" src="img/exclusive_link-banner_top@1x.jpg"
+                                     srcset="img/exclusive_link-banner_top@2x.jpg 2x"
+                                     alt="advertising_banner">
+                            </picture>
+                        </div>
+                        <div class="exclusive__offer-description">
+                            <h1 class="title title--h1">Duisaute mvel eum</h1>
+                            <h4 class="title title--h4">voluptate velit esse</h4>
+                            <p class="mt-3 mt-lg-5 mb-4">Lorem ipsum dolor sit amet, consec tetuer adipiscing elit.
+                                Maecenas ips
+                                um velit, conse
+                                ctetuer eu lobortis ut, dictum at dui. In sem justo, comm odo ut, suscipit pharetra.</p>
+                            <button type="button"
+                                    class="button button--blue d-flex justify-content-start align-items-center mt-auto">
+                                <span>Zjisti více</span>
+
+                                <svg>
+                                    <use xlink:href="img/sprite_auto.svg#arrow"></use>
+                                </svg>
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="exclusive__offer-wrapper">
+                        <div class="exclusive__offer exclusive__offer--exciderm">
+                            <div class="exclusive__offer-description">
+                                <h4 class="title title--h4">Lorem ipsum
+                                    dolor</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod tempor</p>
+                                <button type="button"
+                                        class="button button--white d-flex justify-content-start align-items-center mt-auto">
+                                    <span>Zjisti více</span>
+                                    <svg>
+                                        <use xlink:href="img/sprite_auto.svg#arrow"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="exclusive__offer-img-wrapper">
+                                <picture>
+                                    <img loading="lazy" src="img/exclusive_link-banner_exciderm@1x.png"
+                                         srcset="img/exclusive_link-banner_exciderm@2x.png 2x"
+                                         alt="advertising_banner">
+                                </picture>
+                            </div>
+                        </div>
+
+                        <div class="exclusive__offer exclusive__offer--geria">
+                            <div class="exclusive__offer-img-wrapper">
+                                <picture>
+                                    <img loading="lazy" src="img/exclusive_link-banner_geria@1x.png"
+                                         srcset="img/exclusive_link-banner_geria@2x.png 2x"
+                                         alt="advertising_banner">
+                                </picture>
+                            </div>
+                            <div class="exclusive__offer-description">
+                                <h4 class="title title--h4">Lorem ipsum
+                                    dolor</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod tempor</p>
+                                <button type="button"
+                                        class="button button--white d-flex justify-content-start align-items-center mt-auto">
+                                    <span>Zjisti více</span>
+                                    <svg>
+                                        <use xlink:href="img/sprite_auto.svg#arrow"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="exclusive__partners">
+                    <h5 class="title title--h5">Další značky</h5>
+                    <ul class="exclusive__partners-list d-flex flex-column flex-md-row flex-md-wrap justify-content-between align-items-center">
+                        <li>
+                            <img src="img/icons/exciderm_logo.svg" alt="exciderm">
+                        </li>
+                        <li>
+                            <img src="img/icons/geria_logo.svg" alt="geria">
+                        </li>
+                        <li>
+                            <img src="img/icons/ocuswiss_logo.svg" alt="ocuswiss">
+                        </li>
+                        <li>
+                            <img src="img/icons/exciderm_logo.svg" alt="exciderm">
+                        </li>
+                        <li>
+                            <img src="img/icons/geria_logo.svg" alt="geria">
+                        </li>
+                        <li>
+                            <img src="img/icons/ocuswiss_logo.svg" alt="ocuswiss">
+                        </li>
+                    </ul>
+                </div>
+                <button type="button"
+                        class="button d-flex justify-content-start align-items-center mx-auto mt-4">
+                    <span>Zobrazit všechny značky</span>
+                    <svg>
+                        <use xlink:href="img/sprite_auto.svg#arrow"></use>
+                    </svg>
+                </button>
+            </div>
+        </section>
+    </div>
+    <section class="js-section health" id="health">
+        <h2 class="title title--h2">Tipy pro zdraví</h2>
+        <div class="health__wrapper mx-auto p-0">
+            <ul class="health__list d-flex justify-content-between flex-column flex-lg-row">
+                <li class="health__item">
+                    <a href="#" target="_blank"
+                       class="d-sm-flex justify-content-between align-items-center d-lg-block health__item-link">
+                        <div class="health__item-img">
+                            <picture>
+                                <source type="image/webp"
+                                        srcset="img/about-health_img_1@1x.webp 1x, img/about-health_img_1@2x.webp 2x">
+                                <img loading="lazy" src="img/about-health_img_1@1x.jpg"
+                                     srcset="img/about-health_img_1@2x.jpg 2x"
+                                     alt="advertising_banner">
+                            </picture>
+                        </div>
+                        <div class="health__item-description">
+                            <h3 class="title title--h3 mt-md-4">Jak si poradit s horečkou?</h3>
+                            <p>Jak si poradit s horečkou?</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="health__item">
+                    <a href="#" target="_blank"
+                       class="d-sm-flex justify-content-between align-items-center d-lg-block  health__item-link">
+                        <div class="health__item-img">
+                            <picture>
+                                <source type="image/webp"
+                                        srcset="img/about-health_img_2@1x.webp 1x, img/about-health_img_2@2x.webp 2x">
+                                <img loading="lazy" src="img/about-health_img_2@1x.jpg"
+                                     srcset="img/about-health_img_2@2x.jpg 2x"
+                                     alt="advertising_banner">
+                            </picture>
+                        </div>
+                        <div class="health__item-description">
+                            <h3 class="title title--h3 mt-md-4">Odvykání kouření</h3>
+                            <p>S novým rokem řada z nás začíná uvažovat, s novým rokem řada z nás začíná uvažovat, s
+                                novým rokem řada z nás začíná uvažovat</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="health__item">
+                    <a href="#" target="_blank"
+                       class="d-sm-flex justify-content-between align-items-center d-lg-block health__item-link">
+                        <div class="health__item-img">
+                            <picture>
+                                <source type="image/webp"
+                                        srcset="img/about-health_img_3@1x.webp 1x, img/about-health_img_3@2x.webp 2x">
+                                <img loading="lazy" src="img/about-health_img_3@1x.jpg"
+                                     srcset="img/about-health_img_3@2x.jpg 2x"
+                                     alt="advertising_banner">
+                            </picture>
+                        </div>
+                        <div class="health__item-description">
+                            <h3 class="title title--h3 mt-md-4">Tipy pro alergiky</h3>
+                            <p>Pyl, slunce, domácí mazlíčci</p>
+                        </div>
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <button type="button"
+                class="button d-flex justify-content-start align-items-center mx-auto mt-auto">
+            <span>Zobrazit další články</span>
+            <svg>
+                <use xlink:href="img/sprite_auto.svg#arrow"></use>
+            </svg>
+        </button>
+    </section>
+    <section class="js-section contacts" id="contacts">
+        <h2 class="title title--h2">Kontakt</h2>
+        <div class="contacts__wrapper mx-auto p-0">
+            <div class="contacts__info d-lg-flex justify-content-between">
+                <ul class="contacts__info-list">
+                    <li class="contacts__info-item contacts__info-item--location d-flex justify-content-start">
+                        <svg>
+                            <use xlink:href="img/sprite_auto.svg#contacts-location"></use>
+                        </svg>
+                        <div>
+                            <h4 class="title title--h4">Lékárna háje</h4>
+                            <p class="m-0 mt-3">Pod višňovkou 1662/27</p>
+                            <p class="m-0">140 00 Praha 4</p>
+                            <button type="button"
+                                    class="button d-flex justify-content-start align-items-center p-0 mt-4">
+                                <span>Navigovat</span>
+                                <svg>
+                                    <use xlink:href="img/sprite_auto.svg#arrow"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="contacts__info-item contacts__info-item--phone">
+                        <a class="d-flex justify-content-start align-items-center" href="tel:666555444">
+                            <svg>
+                                <use xlink:href="img/sprite_auto.svg#contacts-phone"></use>
+                            </svg>
+                            <h4 class="title title--h4">666 555 444</h4>
+                        </a>
+                    </li>
+                    <li class="contacts__info-item contacts__info-item--mail">
+                        <a class="d-flex justify-content-start align-items-center"
+                           href="mailto:info@lekarnametrohaje.cz">
+                            <svg>
+                                <use xlink:href="img/sprite_auto.svg#contacts-mail"></use>
+                            </svg>
+                            <h4 class="title title--h4">info@lekarnametrohaje.cz</h4>
+                        </a>
+                    </li>
+                    <li class="contacts__info-item contacts__info-item--agent d-flex justify-content-start">
+                        <svg>
+                            <use xlink:href="img/sprite_auto.svg#contacts-agent"></use>
+                        </svg>
+                        <div>
+                            <h4 class="title title--h4">Mgr. H. Štěpánková</h4>
+                            <p>Odborný zástupce</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="contacts__schedule">
+                    <div class="d-flex justify-content-start align-items-center">
+                        <svg>
+                            <use xlink:href="img/sprite_auto.svg#contacts-schedule"></use>
+                        </svg>
+                        <h4 class="title title--h4">Otevírací hodiny</h4>
+                    </div>
+                    <div class="contacts__schedule-table">
+                        <table class="col-12">
+                            <tr class="contacts__schedule-row">
+                                <td class="contacts__schedule-day">Pondělí — 18. 12.</td>
+                                <td class="contacts__schedule-period">8 — 11</td>
+                                <td class="contacts__schedule-period">12 — 17</td>
+                            </tr>
+                            <tr class="contacts__schedule-row contacts__schedule-row--current">
+                                <td class="contacts__schedule-day">Úterý — 19. 12.</td>
+                                <td class="contacts__schedule-period">8 — 11</td>
+                                <td class="contacts__schedule-period">12 — 17</td>
+                            </tr>
+                            <tr class="contacts__schedule-row">
+                                <td class="contacts__schedule-day">Středa — 20. 12.</td>
+                                <td class="contacts__schedule-period">8 — 11</td>
+                                <td class="contacts__schedule-period">12 — 17</td>
+                            </tr>
+                            <tr class="contacts__schedule-row">
+                                <td class="contacts__schedule-day">Čtvrtek — 21. 12.</td>
+                                <td class="contacts__schedule-period">8 — 11</td>
+                                <td class="contacts__schedule-period">12 — 17</td>
+                            </tr>
+                            <tr class="contacts__schedule-row">
+                                <td class="contacts__schedule-day">Pátek — 22. 12.</td>
+                                <td class="contacts__schedule-period">8 — 11</td>
+                                <td class="contacts__schedule-period">12 — 17</td>
+                            </tr>
+                            <tr class="contacts__schedule-row">
+                                <td class="contacts__schedule-day">Sobota — 23. 12.</td>
+                                <td class="contacts__schedule-period">8 — 11</td>
+                                <td class="contacts__schedule-period">12 — 17</td>
+                            </tr>
+                            <tr class="contacts__schedule-row">
+                                <td class="contacts__schedule-day">Neděle — 24. 12.</td>
+                                <td class="contacts__schedule-period">Zavřeno</td>
+                                <td class="contacts__schedule-period">Zavřeno</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="contacts__schedule-attention-wrapper d-flex justify-content-start">
+                        <svg>
+                            <use xlink:href="img/sprite_auto.svg#warning"></use>
+                        </svg>
+                        <div class="contacts__schedule-attention">
+                            <h4 class="title title--h4">Výjimky v otevírací době</h4>
+                            <ul>
+                                <li>24. 12. — Vánoční neděle bude celý den zavřeno</li>
+                                <li>25. 12. — První svátek vánoční v pondělí bude celý den zavřeno</li>
+                                <li>31. 12. — Silvestr bude celý den zavřeno</li>
+                                <li>1. 12. — Nový rok bude celý den zavřeno</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <p class="contacts__address">Lékárnu provozuje ViP pharm s.r.o., Pod višňovkou 1662/27, 140 00 Praha 4, IČO:
+                61501778, DIČ: CZ61501778.</p>
+            <div class="contacts__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d155111.67273517343!2d14.447627795893379!3d50.069575979470734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1643053695162!5m2!1sru!2sru"
+                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="page-footer container-fluid">
+    <div class="page-footer__wrapper mx-auto">
+        <ul class="page-footer__list d-sm-flex justify-content-between">
+            <li class="page-footer__item">
+                <h4 class="title title--h4">Buďte s námi ve spojení</h4>
+                <ul class="page-footer__info-list">
+                    <li class="page-footer__info-item d-flex justify-content-start">
+                        <svg>
+                            <use xlink:href="img/sprite_auto.svg#location-white"></use>
+                        </svg>
+                        <div>
+                            <h6 class="title title--h6">Lékárna háje</h6>
+                            <p class="m-0">Pod višňovkou 1662/27</p>
+                            <p class="m-0">140 00 Praha 4</p>
+                        </div>
+                    </li>
+                    <li class="page-footer__info-item">
+                        <a class="d-flex justify-content-start" href="tel:666555444">
+                            <svg>
+                                <use xlink:href="img/sprite_auto.svg#phone-white"></use>
+                            </svg>
+                            <h6 class="title title--h6">666 555 444</h6>
+                        </a>
+                    </li>
+                    <li class="page-footer__info-item">
+                        <a class="d-flex justify-content-start" href="mailto:info@lekarnametrohaje.cz">
+                            <svg>
+                                <use xlink:href="img/sprite_auto.svg#mail-white"></use>
+                            </svg>
+                            <h6 class="title title--h6">info@lekarnametrohaje.cz</h6>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="page-footer__networks-list d-flex justify-content-start">
+                    <li>
+                        <a href="#" target="_blank">
+                            <svg>
+                                <use xlink:href="img/sprite_auto.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/magistralekarny/" target="_blank">
+                            <svg>
+                                <use xlink:href="img/sprite_auto.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCB8mwWmZZgCCYM0jSZ8Hs4Q" target="_blank">
+                            <svg>
+                                <use xlink:href="img/sprite_auto.svg#youtube"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="page-footer__item">
+                <h4 class="title title--h4">Eshop</h4>
+                <ul class="page-footer__item-links">
+                    <li>
+                        <a href="#" target="_blank">
+                            Vánoce
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            Volně prodejné léky
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            Dermokosmetika
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            Děti a maminky
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            Šampony
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            Zdravotnické pomůcky
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            Lorem ipsum
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            Lorem ipsum
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            Lorem ipsum
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="page-footer__item">
+                <h4 class="title title--h4">Značky</h4>
+                <ul class="page-footer__item-links">
+                    <li>
+                        <a href="#" target="_blank">
+                            Vánoce
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            Volně prodejné léky
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            Dermokosmetika
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            Děti a maminky
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            Šampony
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            Zdravotnické pomůcky
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            Lorem ipsum
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            Lorem ipsum
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            Lorem ipsum
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <a class="page-footer__logo-wrapper" href="/">
+            <img class="page-footer__logo" loading="lazy" src="img/icons/logo-white.svg" alt="magistra-logo">
+        </a>
+        <p class="mt-4">Tyto stránky používají cookies. Více&nbsp;informací&nbsp;<a href="/">zde</a>.</p>
+        <ul class="page-footer__networks-list d-flex justify-content-start mx-auto mt-4">
+            <li>
+                <a href="#" target="_blank">
+                    <svg>
+                        <use xlink:href="img/sprite_auto.svg#instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/magistralekarny/" target="_blank">
+                    <svg>
+                        <use xlink:href="img/sprite_auto.svg#facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UCB8mwWmZZgCCYM0jSZ8Hs4Q" target="_blank">
+                    <svg>
+                        <use xlink:href="img/sprite_auto.svg#youtube"></use>
+                    </svg>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</footer>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

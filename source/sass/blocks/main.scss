@@ -1,0 +1,14 @@
+.page-main {
+  width: 100%;
+  margin: 0 auto;
+  flex: 1 0 auto;
+
+  &__wrapper {
+    background-image: url("../img/about_background@1x.webp");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/about_background@2x.webp");
+    }
+  }
+
+}
